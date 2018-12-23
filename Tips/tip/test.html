@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>php中文网(php.cn)</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            //按钮单击时执行
+                //Ajax调用处理
+                var html = $.ajax({
+                    type: "POST",
+                    url: "test.php",
+                    data: "name=garfield&age=18",
+                });
+                console.log(html);
+                console.log(html.responseText);
+        });
+    </script>
+</head>
+<body>
+<div id="myDiv"><h2>通过 AJAX 改变文本</h2></div>
+<button id="testAjax" type="button">Ajax改变内容</button>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>test</title>
+<link rel="stylesheet" href="css/jquery-yys-slider.css">
+</head>
+<body>
+<div class="content-part part-tese">
+	<!--<div class="content-title">-->
+	<!--</div>-->
+	<!--<div class="shadow">-->
+	<!--</div>-->
+	<div class="gallery_container">
+		<div class="gallery_wrap threeD_gallery_wrap" style="margin-left: -360px; margin-top: -260px;">
+			<div href="javascript:;" class="gallery_item threeD_gallery_item gallery_left_middle">
+				<img src="" class="show">
+				<!--<div class="line-t">-->
+				<!--</div>-->
+				<!--<div class="line-r">-->
+				<!--</div>-->
+				<!--<div class="line-b">-->
+				<!--</div>-->
+				<!--<div class="line-l">-->
+				<!--</div>-->
+			</div>
+			<div href="javascript:;" class="gallery_item threeD_gallery_item front_side">
+				<img src="" class="show">
+				<!--<div class="line-t">-->
+				<!--</div>-->
+				<!--<div class="line-r">-->
+				<!--</div>-->
+				<!--<div class="line-b">-->
+				<!--</div>-->
+				<!--<div class="line-l">-->
+				<!--</div>-->
+			</div>
+			<div href="javascript:;" class="gallery_item threeD_gallery_item gallery_right_middle">
+				<img src="" class="show">
+				<!--<div class="line-t">-->
+				<!--</div>-->
+				<!--<div class="line-r">-->
+				<!--</div>-->
+				<!--<div class="line-b">-->
+				<!--</div>-->
+				<!--<div class="line-l">-->
+				<!--</div>-->
+			</div>
+			<div href="javascript:;" class="gallery_item threeD_gallery_item gallery_out">
+				<img src="./images/yys_banner4.jpg" class="show">
+				<!--<div class="line-t">-->
+				<!--</div>-->
+				<!--<div class="line-r">-->
+				<!--</div>-->
+				<!--<div class="line-b">-->
+				<!--</div>-->
+				<!--<div class="line-l">-->
+				<!--</div>-->
+			</div>
+		</div>
+		<a class="prev" href="javascript:;"></a> <a class="next" href="javascript:;"></a>
+	</div>
+</div>
+<div id="inputbox" style="display: none;height: 50px;width: 100%;background: rgba(0,0,0,0.5);text-align: center;position: fixed;bottom: 0;z-index: 5001;">
+	<input type="text" id="text" style="border: 1px solid silver;width: 50%;height: 70%;border-radius:6px">
+	<button id="sentContent" style="border: 1px solid silver;height: 70%; border-radius: 6px">发送</button>
+	<button id="Switch" style="border: 1px solid silver;height: 70%; border-radius: 6px">查看弹幕</button>
+</div>
+
+<div id="showSiderbar" style="display: none;overflow: auto;width: 300px;text-align: center;position:fixed;right: 0;top: 10%;bottom: 10%;z-index: 5002;border-radius: 15px;border: 2px solid #00a3eb;background:grey;">
+	<button id="down" style="display: inline;">关闭</button>
+	<p>弹幕列表</p>
+	<table id="contList" style="margin: 0 auto">
+		<tr>
+			<td style="border: 1px solid #ae00eb;overflow: hidden">内容</td>
+		</tr>
+	</table>
+</div>
+<script src="./jquery-3.3.1.min.js"></script>
+<script src="js/jquery-yys-slider.js"></script> 
+	<script>
+	$(function(){
+		$('.content-part.part-tese').addClass('show');
+		$('.gallery_container').gallery_slider({imgNum: 4});
+	})
+	</script>
+</body>
+</html>
